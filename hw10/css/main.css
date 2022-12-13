@@ -278,7 +278,7 @@ a{
     position:absolute;
     width: 100%;
     top:calc(50% - 10px);
-    left: 0%;
+    left: 0;
     font-size: 20px;
     z-index: 5;
     background-color: red;
@@ -287,8 +287,8 @@ a{
 .fixed{
     position:fixed;
     display: inline-block;
-    top: calc(50% - 66.45px);
-    left: 0%;
+    top: calc(50% - 142.5px);
+    left: 0;
     outline: 2px solid green;
     background-color: red;
 }
