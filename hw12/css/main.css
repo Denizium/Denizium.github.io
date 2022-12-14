@@ -361,24 +361,24 @@ ul li ul li ul.second_menu{
 .socmenu li a{
     background: url('../images/css_sprites.png') 0 -280px;
     display: block;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
 }
-.socmenu.telephone a{
-    background-position:0 -280;
+.socmenu .telephone a{
+    background-position:-14px -276px;
 }
-.socmenu.mail a{
-    background-position:-70 -280;
+.socmenu .mail a{
+    background-position:-102px -269px;
 }
-.socmenu.linkedin a{
-    background-position: -140 -270;
+.socmenu .linkedin a{
+    background-position: -183px -257px;
 }
-.socmenu.telephone:hover a{
-    background-position: -2 -280;
+.socmenu .telephone:hover a{
+    background-position: -14px -202px;
 }
-.socmenu.mail:hover a{
-    background-position:-70 -280;
+.socmenu .mail:hover a{
+    background-position:-102px -193px;
 }
-.socmenu.linkedin:hover a{
-    background-position: 0 -60;
+.socmenu .linkedin:hover a{
+    background-position:-183px -193px;
 }
