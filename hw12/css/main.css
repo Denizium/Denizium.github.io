@@ -363,8 +363,8 @@ a{
     right:6px;
     background: url('../images/css_sprites.png') -140px -27px;
 }
-ul.first_menu:hover li.float_menu:before{
-    background-position: -331px -26px;
+li:hover.float_menu:before{
+    background-position: -331px -110px;
 }
 .grid_menu:before{
     content:"";
@@ -375,8 +375,8 @@ ul.first_menu:hover li.float_menu:before{
     left:6px;
     background: url('../images/css_sprites.png') -331px -26px;
 }
-.second_menu:hover .grid_menu::before{
-    background-position: -400px -20px;
+li:hover.grid_menu:before{
+    background-position: -140px -110px;
 }
 .first{
     position: absolute;
@@ -418,6 +418,7 @@ ul li ul li ul.second_menu{
     display: block;
     width: 60px;
     height: 60px;
+    transition:background .5s ease;
 }
 .socmenu .telephone a{
     background-position:-14px -276px;
