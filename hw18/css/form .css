@@ -1,0 +1,143 @@
+@import url('reset.css');
+div.main{
+    position: relative;
+    background:yellow;
+    width:1180px;
+    height:1000px;
+    margin:100px auto;
+    border:10px groove red
+}
+textarea{
+    width: 400px;
+    height: 200px;
+    min-width: 200px;
+    max-width: 800px;
+    resize: none;
+    background: white;
+    transition: all 1s ease;
+}
+textarea:hover{
+    background: pink;
+}
+textarea:focus{
+    background: orange;
+}
+textarea:hover:focus{
+    background: lime;
+}
+select{ 
+    width: 70px;  
+    appearance: none;
+    background: url('../images/css_sprites.png') -199px -51px;
+}
+input::placeholder {
+    color: red;
+    font-size:22px;
+    font-style: italic;
+    background: blue;
+}
+/* первый способ*/
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  appearance: textfield;
+}
+/* второй способ*/
+.number {
+	display: inline-block;
+	position: relative;
+	width: 100px;
+}
+.number input[type="number"] {
+	display: block;
+	height: 32px;
+	line-height: 32px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-align: center;
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+.number input[type="number"]::-webkit-outer-spin-button,
+.number input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+.number-minus {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-right: 1px solid #ddd;
+	font-size: 16px;
+	font-weight: 600;
+}
+.number-plus {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	bottom: 1px;
+	width: 20px;
+	padding: 0;
+	display: block;
+	text-align: center;
+	border: none;
+	border-left: 1px solid #ddd;
+	font-size: 16px;
+	font-weight: 600;
+}
+input[type="checkbox"]{
+	display: none;
+}
+input[type="checkbox"]+label{
+	margin: 0 0 0 20px;
+	padding: 5px 0 5px 50px;
+	position: relative;
+	display: inline-block;
+}
+input[type="checkbox"]+label::before{
+	content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0On";
+	position: absolute;
+	height: 20px;
+	width: 40px;
+	background: black;
+	border: 2px solid lawngreen;
+	border-radius: 20px 20px 20px 20px;
+	top: 0;
+	left: 0;
+}
+input[type="checkbox"]+label::after{
+	content: "";
+	position: absolute;
+	height: 20px;
+	width: 20px;
+	background: red;
+	border-radius: 50%;
+	top: 2px;
+	left: 2px;
+	transition: all .5s ease;
+}
+input[type="checkbox"]:checked+label::before{
+	content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0Off";
+	background: blue;
+}
+input[type="checkbox"]:checked+label::after{
+	height: 20px;
+	width: 20px;
+	background: black;
+	border-radius: 50%;
+	top: 2px;
+	left: 20px;
+}

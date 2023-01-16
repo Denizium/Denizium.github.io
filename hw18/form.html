@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mamchur Denis</title>
+    <link rel="stylesheet" href="css/form .css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>$(function() {
+ 
+        (function quantityProducts() {
+          var $quantityArrowMinus = $(".quantity-arrow-minus");
+          var $quantityArrowPlus = $(".quantity-arrow-plus");
+          var $quantityNum = $(".quantity-num");
+       
+          $quantityArrowMinus.click(quantityMinus);
+          $quantityArrowPlus.click(quantityPlus);
+       
+          function quantityMinus() {
+            if ($quantityNum.val() > 1) {
+              $quantityNum.val(+$quantityNum.val() - 1);
+            }
+          }
+       
+          function quantityPlus() {
+            $quantityNum.val(+$quantityNum.val() + 1);
+          }
+        })();
+       
+      });</script>
+</head>
+
+<body>
+    <div class="main">
+    <form action="#">
+        <textarea name="coment" placeholder="Write your message">Your name:</textarea>
+        <select name="drink">
+            <option>Tea</option>
+            <option>Water</option>
+            <option>Juice</option>
+            <option>Wine</option>
+            <option selected>Beer</option>
+        </select>
+        <input name="name" placeholder="phone">
+        <p>
+            <input type="submit" value="input_sumbit">
+            <input type="reset" value="input_reset">
+            <input type="button" value="button">
+            <button>button</button>
+        </p>
+        <p>
+            <input type="file">
+            <input type="hidden">
+            <input type="password">
+            <input type="color">
+            <input type="date">
+            <input type="email" required>
+            <input type="number" max="100" min="10" step="5">
+            <input type="range" max="100" min="10" step="5">
+            <div class="quantity-block">
+                <button class="quantity-arrow-minus"> - </button>
+                <input class="quantity-num" type="number" value="1" />
+                <button class="quantity-arrow-plus"> + </button>
+            </div>
+            <div class="number">
+                <button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                <input type="number" min="0" value="1" readonly>
+                <button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+            </div>
+        </p>
+        <p>
+            <input id="check" type="checkbox">
+            <Label for="check"></Label>
+        </p>
+    </form>
+    </div>
+</body>
+
+</html>
