@@ -1,30 +1,86 @@
-@import url('reset.css');
 /*@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); /*font-family: 'Kaushan Script', cursive;*/
 /*@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap'); /*font-family: 'Nunito', sans-serif;*/
 /*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); /*font-family: 'Open Sans', sans-serif;*/
+@import url('reset.css');
 @font-face {
-    font-family: 'Kaushan_Script';
-    src: url('../fonts/Kaushan_Script/KaushanScript-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Nunito';
-    src: url('../fonts/Nunito/Nunito-Regular.ttf'),
-        url('../fonts/Nunito/Nunito-Bold.ttf'),
-        url('../fonts/Nunito/Nunito-ExtraLight.ttf'),
-        url('../fonts/Nunito/Nunito-SemiBold.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'Open_Sans';
-    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf'),
-        url('../fonts/Open_Sans/OpenSans-SemiBold.ttf');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Kaushan Script';
+	src: url('../fonts/Kaushan_Script/KaushanScript-Regular.eot');
+	src: local('☺'), url('../fonts/Kaushan_Script/KaushanScript-Regular.woff') format('woff'), 
+    url('../fonts/Kaushan_Script/KaushanScript-Regular.ttf') format('truetype'), 
+    url('../fonts/Kaushan_Script/KaushanScript-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-ExtraLight.ttf');
+    src: url('../fonts/Nunito/Nunito-ExtraLight.eot');
+    src: url('../fonts/Nunito/Nunito-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Nunito/Nunito-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Nunito/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Bold.ttf');
+    src: url('../fonts/Nunito/Nunito-Bold.eot');
+    src: url('../fonts/Nunito/Nunito-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Nunito/Nunito-Bold.woff2') format('woff2'),
+        url('../fonts/Nunito/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Regular.ttf');
+    src: url('../fonts/Nunito/Nunito-Regular.eot');
+    src: url('../fonts/Nunito/Nunito-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Nunito/Nunito-Regular.woff2') format('woff2'),
+        url('../fonts/Nunito/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-SemiBold.ttf');
+    src: url('../fonts/Nunito/Nunito-SemiBold.eot');
+    src: url('../fonts/Nunito/Nunito-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Nunito/Nunito-SemiBold.woff2') format('woff2'),
+        url('../fonts/Nunito/Nunito-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/OpenSans-SemiBold.ttf');
+    src: url('../fonts/Open_Sans/OpenSans-SemiBold.eot');
+    src: url('../fonts/Open_Sans/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Open_Sans/OpenSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/Open_Sans/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/Open_Sans/OpenSans-Regular.ttf');
+    src: url('../fonts/Open_Sans/OpenSans-Regular.eot');
+    src: url('../fonts/Open_Sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Open_Sans/OpenSans-Regular.woff2') format('woff2'),
+        url('../fonts/Open_Sans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -35,25 +91,18 @@ body{
 /*header*/
 header{
     display: flex;
-    height: 670px;
-    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('../images/layer1.png');
-    background-blend-mode: soft-light;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
+    height: 667px;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('../images/layer1.png') 50% / cover;
 }
 .wrapper{
     position: relative;
     width: 1110px;
-    margin: 65px auto 30px;
+    margin: 65px auto 210px;
     /*outline: 1px solid white;*/
 }
 .first{
     display:flex;
     justify-content: space-between;
-}
-.logo{
-    display: inline-flex;
 }
 .logo a{
     text-decoration: none;
@@ -67,15 +116,18 @@ header{
     display: inline-block;
     padding: 0 20px;
 }
+.header_menu li:last-child{
+    padding: 0 0 0 20px;
+}
 .header_menu li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-family: "Nunito - Semi Bold";
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 48px;
+    letter-spacing: 0.45px;
+    line-height: 42px;
     text-align: right;
 }
 .header_menu li a:hover{
@@ -83,58 +135,59 @@ header{
 }
 /*section1*/
 .section1{
-    margin-top: 106px;
+    margin-top: 91px;
 }
 .content1{
     color: rgb(255, 255, 255);
-    font-family: "Nunito - Semi Bold";
-    font-size: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 48px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 1.2px;
     line-height: 60px;
     text-align: center;
 }
 .content1_1{
     color: rgb(255, 255, 255);
-    font-family: "Nunito - Semi Bold";
-    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1.2px;
-    line-height: normal;
+    line-height: 50px;
     vertical-align: text-top;
 }
 .content2{
     color: rgb(255, 255, 255);
-    font-family: "Nunito - Semi Bold";
+    font-family: 'Nunito', sans-serif;
     font-size: 40px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
     line-height: normal;
     text-align: center;
+    margin-top: 5px;
 }
 .gave{
-    margin-top: 47px;
+    margin-top: 28px;
 }
 .content3{
     color: rgb(255, 255, 255);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.45px;
     line-height: 36px;
     text-align: center;
 }
 .content4{
     color: rgb(255, 255, 255);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.45px;
     line-height: 36px;
     text-align: center;
 }
@@ -143,38 +196,42 @@ section.section1{
 }
 .section1_menu{
     text-align: center;
-    margin-top: 43px;
+    margin-top: 33px;
 }
 .section1_menu li {
     display: inline-block;
-    border: 2px solid white;
     text-align: center;
-    margin: 0 15px;
+    margin: 0 11px;
 }
 .section1_menu li a{
     display: inline-block;
     text-decoration: none;
     width: 160px;
     height: 40px;
+    border: 2px solid white;
     color: rgb(255, 255, 255);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 40px;
 }
 .section1_menu li a:hover{
     color: black;
     background: white;
 }
+.mark_wite{
+    position: relative;
+   margin: 138px auto 0;
+}
 .check_mark_wite{
     position: absolute;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
     rotate: 135deg;
     bottom: 5px;
     left: 50%;
@@ -184,47 +241,44 @@ section.section1{
 .section2{
     display:flex;
     flex-flow: row wrap;
-    background-image: linear-gradient(rgb(255, 255, 255, 0.41), rgb(255, 255, 255, 0.41)), url('../images/layer2.png');
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-position: center;
+    background: linear-gradient(rgb(255, 255, 255, 0.41), rgb(255, 255, 255, 0.41)), url('../images/layer2.png') 50% / cover;
     margin: 0 auto;
     height: 646px;
 }
 .wrapper_section2{
     position: relative;
     width: 1110px;
-    margin: 50px auto 50px;
+    margin: 53px auto 50px;
     /*outline: 1px solid black;*/
 }
 .content5{
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 32px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 36px;
+    letter-spacing: 0.8px;
+    line-height: 28px;
     text-align: center;
 }
 .section2_content{
-    margin-top: 36px;
+    margin-top: 21px;
 }
 .content6{
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 30px;
     text-align: center;
 }
 .figure2{
     width: 120px;
     height: 9px;
-    background: url('../images/css_sprites.png') -56px -143px;
-    margin: 44px auto 12px auto;
+    background: url('../images/css_sprites.png') -101px -267px;
+    margin: 37px auto 12px auto;
 }
 .baget{
     position: relative;
@@ -237,7 +291,7 @@ section.section1{
 .baget_left1{
     position: absolute;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -277,25 +331,13 @@ section.section1{
     border-right: 1px solid black;
     transform: skew(170deg);
     rotate: 130deg;
-    top: 32px;
-    left: 7px;
-}
-.left_mark1::after{
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 5px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    transform: skew(170deg);
-    rotate: 130deg;
-    top: 76px;
-    left: -42px;
+    top: 14px;
+    left: 117px;
 }
 .baget_left2{
     position: absolute;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -326,10 +368,22 @@ section.section1{
     top: 10.5px;
     left: 95px;
 }
+.left_mark2::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 5px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: skew(170deg);
+    rotate: 130deg;
+    top: 15px;
+    left: 98px;
+}
 .baget_left3{
     position: absolute;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -360,10 +414,22 @@ section.section1{
     top: 10.5px;
     left: 81px;
 }
+.left_mark3::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 5px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: skew(170deg);
+    rotate: 130deg;
+    top: 14.5px;
+    left: 84px;
+}
 .baget_left4{
     position: absolute;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -394,7 +460,7 @@ section.section1{
     top: 10.5px;
     left: 81px;
 }
-.left_mark2::before{
+.left_mark4::before{
     position: absolute;
     content: "";
     width: 10px;
@@ -403,26 +469,14 @@ section.section1{
     border-right: 1px solid black;
     transform: skew(170deg);
     rotate: 130deg;
-    top: 134px;
-    left: -41px;
-}
-.left_mark2::after{
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 5px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    transform: skew(170deg);
-    rotate: 130deg;
-    top: 184.5px;
-    left: -41px;
+    top: 15px;
+    left: 84px;
 }
 .baget_right1{
     position: absolute;
     width: 119px;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -452,12 +506,24 @@ section.section1{
     border-radius: 50%;
     top: 9px;
     left: -30px;
-} 
+}
+.right_mark1::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 5px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: skew(170deg);
+    rotate: 130deg;
+    top: 14px;
+    left: -27px;
+}
 .baget_right2{
     position: absolute;
     width: 105px;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -488,7 +554,7 @@ section.section1{
     top: 9px;
     left: -30px;
 } 
-.right_mark1::before{
+.right_mark2::before{
     position: absolute;
     content: "";
     width: 10px;
@@ -497,26 +563,14 @@ section.section1{
     border-right: 1px solid black;
     transform: skew(170deg);
     rotate: 130deg;
-    top: 15px;
-    left: 733px;
-}
-.right_mark1::after{
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 5px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    transform: skew(170deg);
-    rotate: 130deg;
-    top: 63px;
-    left: 793px;
+    top: 14px;
+    left: -27px;
 }
 .baget_right3{
     position: absolute;
     width: 67px;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -547,11 +601,23 @@ section.section1{
     top: 9px;
     left: -30px;
 }
+.right_mark3::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 5px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    transform: skew(170deg);
+    rotate: 130deg;
+    top: 13px;
+    left: -27px;
+}
 .baget_right4{
     position: absolute;
     width: 67px;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
@@ -582,7 +648,7 @@ section.section1{
     top: 9px;
     left: -15px;
 }
-.right_mark2::before{
+.right_mark4::before{
     position: absolute;
     content: "";
     width: 10px;
@@ -591,31 +657,20 @@ section.section1{
     border-right: 1px solid black;
     transform: skew(170deg);
     rotate: 130deg;
-    top: 143px;
-    left: 793px;
-}
-.right_mark2::after{
-    position: absolute;
-    content: "";
-    width: 10px;
-    height: 5px;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    transform: skew(170deg);
-    rotate: 130deg;
-    top: 203px;
-    left: 793px;
+    top: 13px;
+    left: -12px;
 }
 .check_mark_black{
     position: absolute;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
+    width: 25px;
+    height: 25px;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
     rotate: 135deg;
-    bottom: -23px;
-    left: 366.7px;
+    bottom: -55px;
+    left: 50%;
+    transform: translate(35%,35%);
 }
 /*section3*/
 .section3{
@@ -631,17 +686,17 @@ section.section1{
     position: relative;
     width: 842px;
     height: 591px;
-    margin: 62px auto 64px;
+    margin: 65px auto 64px;
     /*outline: 1px solid black;*/
 }
 .content7{
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 32px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 36px;
+    letter-spacing: 0.8px;
+    line-height: 20px;
     text-align: center;
 }
 .slider{
@@ -670,10 +725,10 @@ section.section1{
 }
 .slider_wrapper{
     display: flex;
-    width: 760px;
-    height: 271px;
+    /*width: 760px;*/
+    /*height: 271px;*/
     /*outline: 1px solid black;*/
-    margin: 0 auto;
+    margin: 0 41px;
 }
 .slider__item{
     width: 160px;
@@ -685,23 +740,24 @@ section.section1{
 }
 .slider_image{
     margin: 19px 25px 0 25px;
+    border-radius: 50%;
 }
 .slider_content1{
     display: inline-flex;
-    width: 92px;
+    width: 120px;
     height: 28px;
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
     line-height: 18px;
-    margin: 20px 34px 18px 34px;
+    margin: 14px auto 18px auto;
 }
 .slider_content2{
     color: rgb(15, 20, 23);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 10px;
     font-weight: 400;
     font-style: normal;
@@ -714,14 +770,14 @@ section.section1{
     width: 42px;
     height: 14px;
     color: rgb(15, 20, 23);
-    font-family: "Open Sans - Semi Bold";
+    font-family: 'Open Sans';
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.4px;
     line-height: 18px;
     text-align: center;
-    margin-top: 16px;
+    margin-top: 9px;
 }
 .slider_check_right{
     position: absolute;
@@ -748,7 +804,7 @@ ul.point{
 }
 .point li{
     display:inline-block;
-    padding: 0 1px;
+    padding: 0 2.2px;
 }
 .point li a{
     display: block;
@@ -764,26 +820,26 @@ li.active a{
 .slider_content4{
     display:block;
     color: rgb(23, 14, 14);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 24px;
+    letter-spacing: 0.35px;
+    line-height: 10px;
     text-align: center;
     margin-top: 46px;
 }
 .slider_content5{
     display:block;
     color: rgb(23, 14, 14);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 24px;
+    letter-spacing: 0.35px;
+    line-height: 10px;
     text-align: center;
-    margin-bottom: 43px;
+    margin: 14px 0 45px 0;
 }
 .slider_menu{
     text-align: center;
@@ -792,7 +848,7 @@ li.active a{
     display: inline-block;
     border: 2px solid black;
     text-align: center;
-    margin: 0 15px;
+    margin: 0 11px;
 }
 .slider_menu li a{
     display: inline-block;
@@ -800,11 +856,11 @@ li.active a{
     width: 160px;
     height: 40px;
     color: rgb(8, 16, 19);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 40px;
 }
 .slider_menu li a:hover{
@@ -829,47 +885,46 @@ li.active a{
 .frame_section4{
     position: relative;
     height: 409px;
-    margin: 61px auto 57px;
+    margin: 64px auto 57px;
     /*outline: 1px solid white;*/
     text-align: center;
 }
 .content8{
     color: rgb(255, 255, 255);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 32px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 32px;
+    letter-spacing: 0.8px;
+    line-height: 20px;
     text-align: center;
 }
 .content9{
     color: rgb(255, 255, 255);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 30px;
     text-align: center;
-    margin-top: 31px;
+    margin-top: 28px;
 }
 .figure3{
     width: 120px;
     height: 9px;
-    background: url('../images/css_sprites.png') -56px -162px;
-    margin: 40px auto 0 auto;
+    background: url('../images/css_sprites.png') -101px -218px;
+    margin: 32px auto 0 auto;
 }
-.logos_section4_first{
+.logos_section4{
     display: flex;
+    width: 756px;
+    flex-wrap: wrap;
 }
 .logo_section4{
     display:inline-flex;
     align-items: center;
     margin: 51px 15px 26px;
-}
-.logos_section4_second{
-    display: flex;
 }
 .logo_section4_second{
     display:inline-flex;
@@ -879,12 +934,12 @@ li.active a{
 .check_mark_wite_section4{
     position: absolute;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid white;
-    border-right: 2px solid white;
+    width: 25px;
+    height: 25px;
+    border-top: 4px solid white;
+    border-right: 4px solid white;
     rotate: 135deg;
-    bottom: 4px;
+    bottom: 6px;
     left:50%;
     transform: translate(35%,35%);
 }
@@ -899,18 +954,18 @@ li.active a{
     position: relative;
     width: 1110px;
     height: 351px;
-    margin: 61px auto 57px auto;
+    margin: 64px auto 57px auto;
     /*outline: 1px solid black;*/
     text-align: center;
 }
 .content10{
     color: rgb(11, 8, 6);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 32px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 36px;
+    letter-spacing: 0.8px;
+    line-height: 52px;
     text-align: center;
 }
 .facts{
@@ -919,72 +974,56 @@ li.active a{
    margin: 0 auto;
    justify-content: center;
 }
+.fact:first-child{
+    margin: 0 15px 0 0;
+}
+.fact:last-child{
+    margin: 0 0 0 15px;
+}
 .fact{
-    display:flexbox;
     width: 160px;
     height: 311px;
     /*outline: 1px solid black;*/
     text-align: center;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 .image_section5{
-    width: 61px;
-    height: 61px;
-    margin: 40px auto 30px auto;
+    width: 70px;
+    height: 70px;
+    background: url('../images/css_sprites.png') -121px -15px;
+    margin: 40px auto 12px auto;
 }
-.image1_section5{
-    width: 60px;
-    height: 60px;
-    background: url('../images/css_sprites.png') -76px -5px;
-    margin: .5px auto;
+.image2{
+    background-position: -216px -104px;
 }
-.image2_section5{
-    width: 55px;
-    height: 55px;
-    background: url('../images/css_sprites.png') -146px -66px;
-    margin: 3px auto;
+.image3{
+    background-position: -218px -10px;
 }
-.image3_section5{
-    width: 61px;
-    height: 51px;
-    background: url('../images/css_sprites.png') -146px -5px;
-    margin: 5px auto;
+.image4{
+    background-position: -115px -100px;
 }
-.image4_section5{
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-    background: url('../images/css_sprites.png') -76px -76px;
-    margin: 15px auto;
+.image5{
+    background-position: -13px -115px;
 }
-.image5_section5{
-    width: 61px;
-    height: 57px;
-    background: url('../images/css_sprites.png') -5px -76px;
-    margin: 2px auto;
-}
-.image6_section5{
-    width: 61px;
-    height: 61px;
-    background: url('../images/css_sprites.png') -5px -5px;
-    margin: auto auto;
+.image6{
+    background-position: -11px -15px;
 }
 .content11{
     color: rgb(11, 8, 6);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.4px;
     line-height: 36px;
     text-align: center;
-    margin-bottom: 17px;
+    margin-bottom: 4px;
 }
 .content12{
     width: 135px;
     height: 49px;
     color: rgb(11, 8, 6);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
@@ -996,7 +1035,7 @@ li.active a{
 .content13{
     width: 140px;
     color: rgb(11, 8, 6);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
@@ -1008,19 +1047,19 @@ li.active a{
 .check_mark_black_section5{
     position: absolute;
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
+    width: 25px;
+    height: 25px;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
     rotate: 135deg;
-    bottom: 30px;
+    bottom: 6px;
     left: 50%;
     transform: translate(35%,35%);
 }
 /*section6*/
 .section6{
     display: flex;
-    height: 663px;
+    height: 661px;
     background-image: linear-gradient(rgb(249, 247, 247, 1), rgb(249, 247, 247, 1));
 }
 .wrapper_section6{
@@ -1028,44 +1067,42 @@ li.active a{
     width: 1110px;
     height: 500px;
     /*outline: 1px solid black;*/
-    margin: 82px auto 0 auto;
+    margin: 80px auto 0 auto;
 }
 .frame_section6{
-    width: 613px;
+    width: 640px;
 }
 .content14{
-    width: 202px;
     height: 29px;
     color: rgb(11, 8, 6);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 32px;
     font-weight: 700;
     font-style: normal;
-    letter-spacing: normal;
-    line-height: 36px;
+    letter-spacing: 0.6px;
+    line-height: 30px;
     text-align: left;
 }
 .content15{
-    width: 336px;
     height: 13px;
     color: rgb(11, 8, 6);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 30px;
     text-align: left;
-    margin-top: 38px;
+    margin-top: 31px;
 }
 .content16{
     height: 73px;
     color: rgb(11, 8, 6);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.3px;
     line-height: 30px;
     text-align: left;
     margin-top: 32px;
@@ -1073,47 +1110,48 @@ li.active a{
 .content17{
     height: 43px;
     color: rgb(11, 8, 6);
-    font-family: Nunito;
+    font-family: 'Nunito', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.33px;
     line-height: 30px;
     text-align: left;
-    margin: 34px 0 45px 0;
+    margin: 34px 0 55px 0;
 }
 input[type="email"]{
-    width: 348px;
-    height: 40px;
+    width: 306px;
+    height: 38px;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
+    padding: 0 20px;
 }
 .checkbox{
-    margin: 15px 0 16px 0;
+    margin: 5px 0 5px 0;
 }
 input[type="checkbox"]{
 	display: none;
 }
 label{
     color: #000101;
-    font-family: "Nunito - Extra Light";
+    font-family: 'Nunito', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.12px;
     line-height: 30px;
     text-align: left;
 }
 input[type="checkbox"]+label{
-	padding: 5px 0 5px 30px;
+	padding: 5px 0 5px 35px;
 	position: relative;
 	display: inline-block;
 }
 input[type="checkbox"]+label::before{
 	content: "";
 	position: absolute;
-	height: 20px;
-	width: 20px;
+	height: 18px;
+	width: 18px;
 	background: rgb(195, 208, 217);
 	border: 1px solid rgb(0, 0, 0);
 	top: 9px;
@@ -1144,19 +1182,19 @@ input[type="checkbox"]:checked+label::after{
     display: inline-block;
     border: 2px solid black;
     text-align: center;
-    margin: 0 30px 0 0;
+    margin: 0 28px 0 0;
 }
 .section6_button li a{
     display: inline-block;
     text-decoration: none;
-    width: 160px;
-    height: 40px;
+    width: 156px;
+    height: 36px;
     color: rgb(8, 16, 19);
     font-family: Nunito;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 40px;
 }
 .section6_button li a:hover{
@@ -1169,82 +1207,80 @@ input[type="checkbox"]:checked+label::after{
     height: 500px;
     border: 3px dashed rgb(0, 0, 0);
     border-image:url('../images/Coupon_Outline.png') 3 3 / 3px / 0 repeat stretch;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .coupon::before{
     position: absolute;
     content: "";
     width: 41px;
     height: 62px;
-    background:url('../images/css_sprites.png') -5px -143px;
-    top: 365px;
+    background:url('../images/css_sprites.png') -20px -218px;
+    top: 361px;
     left: -20.5px;
 }
 .content18{
     color: rgb(11, 8, 6);
-    font-family: "Open Sans - Semi Bold";
+    font-family: 'Open Sans', sans-serif;
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 1.2px;
     line-height: 34px;
     text-align: center;
     text-transform: uppercase;
-    margin: 59px;
+    margin: 58px 0 5px 5px;
 }
 .content19{
     color: rgb(11, 8, 6);
-    font-family: "Open Sans - Semi Bold";
+    font-family: 'Open Sans', sans-serif;
     font-size: 120px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 6px;
     line-height: 80px;
     text-align: center;
     text-transform: uppercase;
-    margin: 19px 0 42px 0;
+    margin: 19px 0 45px 0;
 }
 .content20{
     color: rgb(11, 8, 6);
-    font-family: "Open Sans - Semi Bold";
+    font-family: 'Open Sans', sans-serif;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.6px;
     line-height: 24px;
     text-align: center;
 }
 .content21{
-    width: 202px;
     height: 59px;
     color: rgb(11, 8, 6);
-    font-family: "Kaushan Script";
+    font-family: 'Kaushan Script', cursive;
     font-size: 48px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 1.2px;
     line-height: 42px;
     text-align: center;
-    margin: 8px auto 6px auto;
+    margin: 12px auto 0 auto;
 }
 .content22{
-    width: 235px;
     height: 50px;
     color: rgb(11, 8, 6);
-    font-family: "Open Sans - Semi Bold";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 18px;
     text-align: center;
-    margin: 30px auto 0 auto;
+    margin: 33px auto 0 auto;
 }
 /*section7*/
 .section7{
     display: flex;
     height: 234px;
-    background-image: url('../images/layer7.png');
+    background: url('../images/layer7.png') 50% / cover;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
@@ -1258,64 +1294,64 @@ input[type="checkbox"]:checked+label::after{
     width: 1078px;
     height: 103px;
     /*outline: 1px solid white;*/
-    margin: 57px auto 0 auto;
+    margin: 50px auto 0 auto;
 }
 .content23{
     color: rgb(255, 255, 255);
-    font-family: "Kaushan Script";
+    font-family: 'Kaushan Script', cursive;
     font-size: 36px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.5px;
     line-height: 48px;
-    text-align: left;
 }
 .content24{
     color: rgb(255, 255, 255);
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.3px;
     line-height: 12px;
     text-align: left;
-    margin-top: 25px;
+    margin-top: 23px;
 }
 .content24_1{
     color: rgb(255, 255, 255);
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.3px;
     line-height: 12px;
     text-align: left;
     vertical-align: text-top;
 }
 .socmenu{
-    margin-left: 553px;
+    margin-left: 545px;
 }
 .content25{
     color: rgb(255, 255, 255);
-    font-family: "Open Sans - Semi Bold";
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.4px;
     line-height: 16px;
     text-align: left;
-    margin: 8px 0 21px 0;
+    margin: 16px 0 18px 0;
 }
 .content26{
+    width: 120px;
     color: rgb(255, 255, 255);
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 14px;
     text-align: left;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
 }
 .soc_menu{
     text-align: left;
@@ -1330,18 +1366,19 @@ input[type="checkbox"]:checked+label::after{
     display: block;
     width: 27px;
     height: 27px;
-    margin-right: 12px;
+    margin-right: 8px;
+    border-radius: 5px;
 }
 .soc_menu li.twitter a {
-    background-position: -217px -6px;
+    background-position: -322px -86px;
 }
 
 .soc_menu .instagram a {
-    background-position: -217px -42px;
+    background-position: -322px -20px;
 }
 
 .soc_menu .facebook a {
-    background-position: -217px -78px;
+    background-position: -321.5px -152px;
 }
 
 .contact{
@@ -1349,50 +1386,50 @@ input[type="checkbox"]:checked+label::after{
 }
 .content27{
     color: rgb(255, 255, 255);
-    font-family: "Open Sans - Semi Bold";
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.4px;
     line-height: 16px;
     text-align: left;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 .contsct_us{
-    margin-top: 21px;
+    margin-top: 17px;
 }
 .telephone1{
     color: rgb(255, 255, 255);
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 14px;
     text-align: left;
     margin: 21px 0 8px 0;
 }
 .contsct_us2{
-    margin: 5px 0 5px 0;
+    margin: 5px 0 8px 0;
 }
 .telephone2{
     color: rgb(255, 255, 255);
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 14px;
     text-align: left;
     margin-bottom: 8px;
 }
 .mail{
     color: rgb(255, 255, 255);
-    font-family: "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: normal;
+    letter-spacing: 0.35px;
     line-height: 14px;
     text-align: left;
 }
