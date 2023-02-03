@@ -278,14 +278,14 @@ section.section1{
     width: 120px;
     height: 9px;
     background: url('../images/css_sprites.png') -101px -267px;
-    margin: 37px auto 12px auto;
+    margin: 37px auto -4px auto;
 }
 .baget{
     position: relative;
-    width: 755px;
-    height: 292px;
+    width: 831px;
+    height: 368px;
     background: url('../images/Baget_Pic.png');
-    background-size: 755px 292px;
+    background-size: 831px 368px;
     margin: 0 auto;
 }
 .baget_left1{
@@ -298,8 +298,8 @@ section.section1{
     letter-spacing: normal;
     line-height: 36px;
     text-align: right;
-    top: 18px;
-    left: -110px;
+    top: 32px;
+    left: -98px;
 }
 .baget_left1::before{
     position: absolute;
@@ -344,8 +344,8 @@ section.section1{
     letter-spacing: normal;
     line-height: 36px;
     text-align: right;
-    top: 62px;
-    left: -140px;
+    top: 86px;
+    left: -126px;
 }
 .baget_left2::before{
     position: absolute;
@@ -390,8 +390,8 @@ section.section1{
     letter-spacing: normal;
     line-height: 36px;
     text-align: right;
-    top: 120px;
-    left: -125px;
+    top: 157px;
+    left: -111px;
 }
 .baget_left3::before{
     position: absolute;
@@ -436,8 +436,8 @@ section.section1{
     letter-spacing: normal;
     line-height: 36px;
     text-align: right;
-    top: 170px;
-    left: -125px;
+    top: 215px;
+    left: -115px;
 }
 .baget_left4::before{
     position: absolute;
@@ -446,9 +446,9 @@ section.section1{
     height: 20px;
     border-bottom: 1px solid black;
     border-right: 1px solid black;
-    transform: skew(-70deg);
+    transform: skew(-60deg);
     top: -2px;
-    left: 125px;
+    left: 115px;
 }
 .baget_left4::after{
     position: absolute;
@@ -483,8 +483,8 @@ section.section1{
     letter-spacing: normal;
     line-height: 36px;
     text-align: right;
-    top: 2px;
-    left: 760px;
+    top: 9px;
+    left: 817px;
 }
 .baget_right1::before{
     position: absolute;
@@ -530,8 +530,8 @@ section.section1{
     letter-spacing: normal;
     line-height: 36px;
     text-align: right;
-    top: 50px;
-    left: 820px;
+    top: 70px;
+    left: 859px;
 }
 .baget_right2::before{
     position: absolute;
@@ -577,8 +577,8 @@ section.section1{
     letter-spacing: normal;
     line-height: 36px;
     text-align: right;
-    top: 130px;
-    left: 820px;
+    top: 136px;
+    left: 878px;
 }
 .baget_right3::before{
     position: absolute;
@@ -624,8 +624,8 @@ section.section1{
     letter-spacing: normal;
     line-height: 36px;
     text-align: right;
-    top: 190px;
-    left: 805px;
+    top: 192px;
+    left: 860px;
 }
 .baget_right4::before{
     position: absolute;
@@ -668,7 +668,7 @@ section.section1{
     border-top: 4px solid black;
     border-right: 4px solid black;
     rotate: 135deg;
-    bottom: -55px;
+    bottom: 5px;
     left: 50%;
     transform: translate(35%,35%);
 }
@@ -871,7 +871,7 @@ li.active a{
 .section4{
     flex-flow: row wrap;
     height: 527px;
-    background-image: linear-gradient(rgb(1, 0, 0, 0.68), rgb(1, 0, 0, 0.68)), url('../images/layer4.png');
+    background: linear-gradient(rgb(1, 0, 0, 0.68), rgb(1, 0, 0, 0.68)), url('../images/layer4.png') 50% / cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: center;
