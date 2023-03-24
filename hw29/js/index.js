@@ -48,7 +48,7 @@ naturalNum = +prompt('Enter any natural number');
 console.log(`You entered a number: ${naturalNum}`);
 let count = 0;
 for (let i = 2; i * 2 <= naturalNum; i++) {
-    if (naturalNum % i == 0) {
+    if (naturalNum % i === 0) {
         console.log(`The divisor of this number: ${i}`);
         if (i % 2 === 0) {
             count++;
@@ -61,7 +61,7 @@ naturalNum = +prompt('Enter any natural number');
 console.log(`You entered a number: ${naturalNum}`);
 sum = 0;
 for (let i = 2; i * 2 <= naturalNum; i++) {
-    if (naturalNum % i == 0) {
+    if (naturalNum % i === 0) {
         console.log(`The divisor of this number: ${i}`);
 
         if (i % 2 === 0) {
